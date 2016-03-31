@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CodePoint","A Unicode code point: from U+0000 to U+10FFFF."],["IllFormedUtf16CodeUnits",""],["Wtf8","A borrowed slice of well-formed WTF-8 data."],["Wtf8Buf","An owned, growable string of well-formed WTF-8 data."],["Wtf8CodePoints","Iterator for the code points of a WTF-8 string."]]});

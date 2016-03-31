@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `wtf8` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, wtf8">
+
+    <title>wtf8 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'wtf8', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>wtf8</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/wtf8/src/lib.rs.html#1-1114' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Implementation of <a href="https://simonsapin.github.io/wtf-8/">the WTF-8 encoding</a>.</p>
+
+<p>This library uses Rust’s type system to maintain
+<a href="https://simonsapin.github.io/wtf-8/#well-formed">well-formedness</a>,
+like the <code>String</code> and <code>&amp;str</code> types do for UTF-8.</p>
+
+<p>Since <a href="https://simonsapin.github.io/wtf-8/#intended-audience">WTF-8 must not be used
+for interchange</a>,
+this library deliberately does not provide access to the underlying bytes
+of WTF-8 strings,
+nor can it decode WTF-8 from arbitrary bytes.
+WTF-8 strings can be obtained from UTF-8, UTF-16, or code points.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CodePoint.html'
+                                  title='wtf8::CodePoint'>CodePoint</a></td>
+                           <td class='docblock short'>
+                                <p>A Unicode code point: from U+0000 to U+10FFFF.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IllFormedUtf16CodeUnits.html'
+                                  title='wtf8::IllFormedUtf16CodeUnits'>IllFormedUtf16CodeUnits</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Wtf8.html'
+                                  title='wtf8::Wtf8'>Wtf8</a></td>
+                           <td class='docblock short'>
+                                <p>A borrowed slice of well-formed WTF-8 data.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Wtf8Buf.html'
+                                  title='wtf8::Wtf8Buf'>Wtf8Buf</a></td>
+                           <td class='docblock short'>
+                                <p>An owned, growable string of well-formed WTF-8 data.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Wtf8CodePoints.html'
+                                  title='wtf8::Wtf8CodePoints'>Wtf8CodePoints</a></td>
+                           <td class='docblock short'>
+                                <p>Iterator for the code points of a WTF-8 string.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "wtf8";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
